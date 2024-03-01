@@ -91,7 +91,7 @@ body{
 }
 
 .header{
-    background-image: url("/pictures/header.jpg");
+    background-image: url("/pictures/header\ \(2\).jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -153,6 +153,92 @@ nav{
 .nav__btn{
     display: none;
 }
+.header__container{
+    padding-block: 10rem 15rem;
+}
+.header__container p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-align: center;
+    opacity: 0.6;
+}
+.header__container h1{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+    color: var(--white);
+    text-align: center;
+
+}
+
+.header__container h1 span{
+    color: var(--primary-color);
+}
+
+.booking__container{
+    padding: 0;
+}
+/*booking section*/
+
+.booking__form{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    transform: translateY(-50%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.input__group{
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input__group span{
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.input__group label{
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.input__group input{
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    outline: none;
+    outline: none;
+    border: none;
+}
+
+.input__group input::placeholder{
+    color: var(--text-light);
+}
+
+.about__container{
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+}
+
+.about__image img{
+    max-width: 450px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
 
 @media  (width > 768px){
     nav{
@@ -206,5 +292,9 @@ nav{
 
     .nav__links a:hover::after{
         width: 100%;
+    }
+    .about__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 }
